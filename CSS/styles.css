@@ -66,13 +66,32 @@ body {
 .logo-web {
   color: var(--logo-specific-color);
 }
-/* Site links */
+.container.nav {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.site-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.site-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav {
   letter-spacing: 0.02cm;
+  display: flex;
+  margin-left: 93px;
 }
 .site-nav .link {
+  display: block;
   color: var(--main-text-color);
-
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -85,10 +104,17 @@ body {
 .site-nav .link.current {
   color: var(--logo-specific-color);
 }
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 /* header contacts */
 .contacts {
   color: var(--secondary-text-color);
   letter-spacing: 0.02cm;
+  font-size: 14px;
+  line-height: 1.15;
+
   text-decoration: none;
 }
 .contacts:hover,
@@ -113,6 +139,7 @@ body {
   line-height: 1.4;
   letter-spacing: 0.06cm;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* Button */
@@ -128,13 +155,21 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06cm;
   text-align: center;
+  margin-left: 248px;
 }
 
 /* Feature list */
-/* .features.section {
-  padding: 94px 215px;
-} */
-.features-section .title {
+.features-list {
+  display: flex;
+}
+.features-list-item {
+  width: 270px;
+}
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list .title {
   margin-bottom: 10px;
   margin-top: 0;
   font-weight: 700;
@@ -142,25 +177,34 @@ body {
   line-height: 1.15;
   text-transform: uppercase;
 }
-.features-section .text {
+.features-list .text {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--secondary-text-color);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
 }
 
 /* Our works */
-/* .works {
-  padding: 94px 215px;
-} */
+.works.section {
+  padding-top: 0;
+}
+
 .section-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+
+.works-section {
+  display: flex;
+}
+
+.works-img:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Our Team section */
@@ -168,11 +212,12 @@ body {
   background-color: var(--our-team-bg);
 }
 .team-section .title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
 }
 .team-section .text {
   margin-top: 0;
@@ -180,14 +225,21 @@ body {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 30px;
+  text-align: center;
 }
-
+.team-section {
+  display: flex;
+}
+.team-items {
+  background-color: var(--background-color);
+}
+.team-items:not(:last-child) {
+  margin-right: 30px;
+}
 /* Footer */
 .footer {
   background-color: var(--footer-color);
-
-  /* width: 1600px;
-  height: 252px; */
 }
 .footer-contacts {
   color: var(--footer-text);
@@ -204,6 +256,12 @@ body {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-cont {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* Portfolio.html */
