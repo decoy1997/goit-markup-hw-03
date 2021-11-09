@@ -283,8 +283,20 @@ body {
   color: var(--background-color);
   background-color: var(--logo-specific-color);
 }
+.port-btn-item:not(:last-child) {
+  margin-right: 8px;
+  padding-bottom: 50px;
+}
+.portfolio-filter-btn {
+  display: flex;
+  justify-content: center;
+}
 
 /* Main section(Portfolio) */
+.portfolio-main-section {
+  display: flex;
+  flex-wrap: wrap;
+}
 .portfolio-main-section .title {
   font-weight: 700;
   font-size: 18px;
