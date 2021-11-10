@@ -17,6 +17,8 @@
   --footer-text: rgba(255, 255, 255, 0.6);
   --logo-black: #000000;
   --our-team-bg: #f5f4fa;
+  --border-nav-col: #ececec;
+  --border-img-portf: #eeeeee;
 }
 body {
   background-color: var(--background-color);
@@ -68,11 +70,13 @@ body {
 }
 .container.nav {
   display: flex;
+  border-bottom: 1px solid var(--border-nav-col);
 }
 .header-nav {
   display: flex;
   align-items: center;
 }
+
 .site-contacts {
   display: flex;
   align-items: center;
@@ -308,4 +312,7 @@ body {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+.portfolio-img {
+  border: 1px solid var(--border-img-portf);
 }
